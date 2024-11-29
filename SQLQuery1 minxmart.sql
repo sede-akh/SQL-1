@@ -1,4 +1,4 @@
----- Restoring Minx mart Data base
+ ---- Restoring Minx mart Data base
 
 
 ---- Restoring Minx mart Data base
@@ -163,7 +163,7 @@ SELECT	* from sales_order
 
 /* Suppose we want to return the total number of orders made via the Wholesale sales channel*/
 
-SELECT COUNT(*) FROM sales_order WHERE sales_channel = ‘Wholesale’;
+SELECT COUNT(*) FROM sales_order WHERE sales_channel = â€˜Wholesaleâ€™;
 
 SELECT Sales_Channel,
        count(OrderNumber) AS total_orders
@@ -262,7 +262,7 @@ SELECT City_Name
 		county,
 		State code,
 		state, from location
-         where city_name LIKE ‘__a%’;
+         where city_name LIKE â€˜__a%â€™;
 
 		 ---Suppose we want to return only the year values from the order date column--
 SELECT
@@ -339,7 +339,7 @@ their name*/
 FROM sales_order
 WHERE customer_id = (SELECT customer_id
 FROM customer
-WHERE customer_name LIKE 'Eminence Corp’)
+WHERE customer_name LIKE 'Eminence Corpâ€™)
 GROUP BY customer_id;*/
 
 /*Suppose we want to return order details for products with a unit price greater than the average
